@@ -1,0 +1,40 @@
+alan-olea-climatizacion/
+│
+├── index.html
+│
+├── src/
+│   ├── sass/
+│   │   ├── base/
+│   │   │   ├── _reset.scss
+│   │   │   ├── _variables.scss
+│   │   │   ├── _mixins.scss
+│   │   │   └── _globales.scss
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── _header.scss
+│   │   │   ├── _hero.scss
+│   │   │   ├── _services.scss
+│   │   │   ├── _benefits.scss
+│   │   │   ├── _contact.scss
+│   │   │   └── _footer.scss
+│   │   │
+│   │   ├── components/
+│   │   │   ├── _buttons.scss
+│   │   │   └── _cards.scss
+│   │   │
+│   │   └── app.scss
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── img/
+│
+├── dist/
+│   ├── css/
+│   ├── js/
+│   └── img/
+│
+├── .gitignore
+├── gulpfile.js
+├── package.json
+└── README.md
