@@ -1,3 +1,11 @@
+/* Base */
+html {
+  font-size: 62.5%;
+}
 
+/* Layout */
+.header {
+  background: brown;
+}
 
-/*# sourceMappingURL=app.css.map */
+/* Components */
