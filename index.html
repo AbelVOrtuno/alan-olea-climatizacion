@@ -18,52 +18,88 @@
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="header__container">
-      <div class="header__logo">
-        <img src="dist/css/js/img/alan-logo.png" alt="Alan Olea Climatización">
-      </div>
+
+      <img
+        src="dist/css/js/img/alan-marca.png"
+        alt="Alan Clima - Aire acondicionado"
+        class="header__logo"
+      >
 
       <nav class="header__nav">
+        <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#contacto" class="btn btn--primary">WhatsApp</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+
+      <a
+        href="https://wa.me/5210000000000"
+        class="header__cta"
+        aria-label="Contactar por WhatsApp"
+      >
+        (123) 456-7890
+      </a>
     </div>
-  </header>
+</header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero__content">
-      <h1>Reparación e Instalación de Aires Acondicionados</h1>
-      <p>Residencial y Automotriz · Servicio rápido y garantizado</p>
+  <section class="hero" id="inicio">
+    <div class="hero__container">
 
-      <a href="https://wa.me/5210000000000" class="btn btn--whatsapp">
+      <div class="hero__content">
+        <h1>
+        Reparación de Aires Acondicionados
+        <span>Residenciales y Automotrices</span>
+        </h1>
+
+        <p>Servicio rápido, confiable y <span id="naranja">garantizado</span> </p>
+
+        <a href="https://wa.me/5210000000000" class="hero__btn">
         Contáctanos por WhatsApp
-      </a>
+        </a>
+      </div>
+
+      <div class="hero__image">
+        <img
+        src="dist/css/js/img/alan-logo.png"
+        alt="Servicio de aire acondicionado residencial y automotriz"
+        >
+      </div>
     </div>
   </section>
 
+
   <!-- Servicios -->
-  <section id="servicios" class="services">
-    <h2>Nuestros Servicios</h2>
+  <section class="services" id="servicios">
+    <h2 class="services__title">Nuestros Servicios</h2>
 
     <div class="services__grid">
-      <article class="card">
-        <h3>Aire Acondicionado Residencial</h3>
-        <p>Instalación, reparación y mantenimiento preventivo.</p>
+
+      <article class="services__card">
+        <img src="dist/css/js/img/reparacion.jpg" alt="Reparacion de aires resideciales">
+        <h3>Reparacion de aires acondicionados residenciales</h3>
+        <p>Diagnostico y reparacion profesional para equipos residenciales y de ultima generacion</p>
       </article>
 
-      <article class="card">
+      <article class="services__card">
+        <img src="dist/css/js/img/instalacion.jpg" alt="Instalacion segura de aires y ventiladores">
+        <h3>Instalacion de Aire Acondicionado</h3>
+        <P>Instalaciones seguras, eficientes y con garantia.¿Necesitas un aire en tu hogar y no sabes como o donde instalarlo? ¡Ven con nosotros y te lo instalamos rapidisimo!</P>
+      </article>
+
+      <article class="services__card">
+        <img src="dist/css/js/img/manttoPrevent.jpg" alt="Limpieza de aires acondicionados">
+        <h3>Mantenimiento Preventivo</h3>
+        <p>Evita fallas y alarga la vida util de tu equipo.Le damos una segunda vida a tu aire viejo.</p>
+      </article>
+
+      <article class="services__card">
+        <img src="dist/css/js/img/aireAutomotriz.png" alt="Aires de autos,camionetas,camiones y mas">
         <h3>Aire Acondicionado Automotriz</h3>
-        <p>Diagnóstico, recarga de gas y reparación.</p>
-      </article>
-
-      <article class="card">
-        <h3>Mantenimiento</h3>
-        <p>Evita fallas y alarga la vida útil de tu equipo.</p>
+        <p>Revision y reparacion del sistema de climatizacion vehicular.</p>
       </article>
     </div>
   </section>
@@ -79,6 +115,24 @@
       <li>Garantía en el trabajo</li>
     </ul>
   </section>
+
+  <!--Testimonios-->
+
+  <section class="testimonials">
+    <h2>Opiniones de Nuestros Clientes</h2>
+
+    <div class="testimonials__grid">
+      <article class="card">
+        <p>"Excelente servicio, muy rápido."</p>
+        <strong>Juan Pérez</strong>
+      </article>
+
+      <article class="card">
+        <p>"Mi aire quedó como nuevo."</p>
+        <strong>María López</strong>
+      </article>
+    </div>
+</section>
 
   <!-- Contacto -->
   <section id="contacto" class="contact">

@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+
+  &--primary {
+    background: $secondary2;
+    color: white;
+  }
+
+  &--whatsapp {
+    background: $accent;
+    color: white;
+    width: 100%;
+  }
+}

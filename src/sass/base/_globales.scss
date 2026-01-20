@@ -1,5 +1,18 @@
 
 html {
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: system-ui, sans-serif;
+  color: $text;
+  background-color: $bg;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
