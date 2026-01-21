@@ -1,6 +1,14 @@
 .why-us{
     background-color: $primary-color;
     padding: 3rem 1rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .6s ease-in;
+}
+.why-us.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 .why-us__container{
     max-width: 100%;
