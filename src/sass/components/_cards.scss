@@ -1,0 +1,44 @@
+.services__card{
+    background: linear-gradient(to right, $primary2, $secondary2);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(1, 0.7, 3, 0.05);
+}
+.service-card__icon{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+.services__card h3{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: oblique;
+    margin-bottom: .5rem;
+    color: white;
+}
+.services__card p{
+    font-size: 1.3rem;
+    color: #4b5563;
+}
+/* Diseño responsivo */
+
+@media (min-width: 768px) {
+    .services__grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .services__card h3{
+        font-size: 3rem;
+    }
+    .services__card p{
+        font-size: 2rem;
+        color: black;
+    }
+}
+@media (min-width :1024px) {
+    .services__grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
