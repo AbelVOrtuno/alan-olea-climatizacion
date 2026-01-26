@@ -1,0 +1,75 @@
+.testimonials{
+    padding: 4rem 1rem;
+    background: linear-gradient(to right, $primary2, $secondary2);
+}
+.testimonials__container{
+    max-width: 90%;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+.testimonials__title{
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: orange;
+    margin-bottom: 3rem;
+}
+/* Diseño de las tarjetas */
+.testimonials__grid{
+    display: grid;
+    gap: 2rem;
+}
+.testimonials__card{
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-radius: 1.6rem;
+    text-align: center;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .08);
+    transition: transform .3s ease;
+}
+.testimonials__card:hover{
+    transform: translateY(-6px);
+}
+
+/* Estilos para el contenido interno */
+.testimonials__card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+.testimonials__card strong{
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: 100;
+}
+.testimonials-stars{
+    color: goldenrod;
+    margin-bottom: .8rem;
+}
+.testimonials__card p{
+    font-size: 2rem;
+    color: #4b5563;
+}
+
+/* Version para Laptop */
+@media (min-width: 1024px){
+    .testimonials__grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Animaciones extras */
+.testimonials__card{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .6s ease;
+}
+.testimonials__card.visible{
+    opacity: 1;
+    transform: translateY(0);
+}

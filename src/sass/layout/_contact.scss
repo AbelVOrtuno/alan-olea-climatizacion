@@ -1,0 +1,80 @@
+.cta{
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, $primary-color, $primary2);
+    color: white;
+    &__container{
+        max-width: 120rem;
+        margin: 0 auto;
+
+        display: grid;
+        gap: 3rem;
+    }
+    
+    &__content h2{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &__content p{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: black;
+    }
+}
+/* Estilos para el boton */
+.btn-whatsapp{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $accent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(34, 197, 94, .4);
+    transition: all .3s ease;
+}
+.btn-whatsapp:hover{
+    background: #16a34a;
+    transform: scale(1.05);
+}
+.cta__phone{
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.cta__image img{
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (min-width: 1024px){
+    .cta__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .cta__content{
+        text-align: left;
+    }
+}
+
+/* Animacion al entrar */
+.cta__content,
+.cta__image{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .6s ease;
+}
+
+.cta.visible .cta__content,
+.cta.visible .cta__image{
+    opacity: 1;
+    transform: translateY(0);
+}

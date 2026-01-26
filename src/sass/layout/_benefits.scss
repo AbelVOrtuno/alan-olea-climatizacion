@@ -1,7 +1,7 @@
 .why-us{
     background-color: $primary-color;
     padding: 3rem 1rem;
-
+/* animacion al hacer scroll */ 
     opacity: 0;
     transform: translateY(30px);
     transition: all .6s ease-in;

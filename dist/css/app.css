@@ -177,6 +177,7 @@ img {
 .why-us {
   background-color: #0a3d62;
   padding: 3rem 1rem;
+  /* animacion al hacer scroll */
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-in;
@@ -272,6 +273,172 @@ img {
     text-align: center;
   }
 }
+.cta {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #0a3d62, #0a4da2);
+  color: white;
+}
+
+.cta__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+}
+
+.cta__content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cta__content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+/* Estilos para el boton */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+.cta__phone {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cta__image img {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .cta__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .cta__content {
+    text-align: left;
+  }
+}
+/* Animacion al entrar */
+.cta__content,
+.cta__image {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.cta.visible .cta__content,
+.cta.visible .cta__image {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #0a4da2, #00aaff);
+}
+
+.testimonials__container {
+  max-width: 90%;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.testimonials__title {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 3rem;
+}
+
+/* Diseño de las tarjetas */
+.testimonials__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonials__card {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonials__card:hover {
+  transform: translateY(-6px);
+}
+
+/* Estilos para el contenido interno */
+.testimonials__card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.testimonials__card strong {
+  font-size: 1.5rem;
+  font-style: oblique;
+  font-weight: 100;
+}
+
+.testimonials-stars {
+  color: goldenrod;
+  margin-bottom: 0.8rem;
+}
+
+.testimonials__card p {
+  font-size: 2rem;
+  color: #4b5563;
+}
+
+/* Version para Laptop */
+@media (min-width: 1024px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+/* Animaciones extras */
+.testimonials__card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.testimonials__card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Components */
 .btn {
   display: inline-block;
@@ -318,7 +485,7 @@ img {
 
 .services__card p {
   font-size: 1.3rem;
-  color: #4b5563;
+  color: black;
 }
 
 /* Diseño responsivo */
