@@ -2,28 +2,47 @@
     padding: 4rem 1rem;
     background: linear-gradient(135deg, $primary-color, $primary2);
     color: white;
-    &__container{
-        max-width: 120rem;
-        margin: 0 auto;
+}
+.cta__container{
+    max-width: 100%;
+    margin: 0 auto;
 
-        display: grid;
-        gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.cta__content{
+    text-align: center;
+}
+.cta__content h2{
+    font-size: 2.5rem;
+    font-style: oblique;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: orange;
+}
+.cta__content p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+@media (min-width:768px ){
+    .cta__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
     }
-    
-    &__content h2{
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1rem;
+    .cta__container h2{
+        font-size: 3.5rem;
     }
-    &__content p{
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-        color: black;
+    .cta__container p{
+        font-size: 3rem;
     }
 }
 /* Estilos para el boton */
 .btn-whatsapp{
-    display: inline-flex;
+    display:  inline-flex;
     align-items: center;
     justify-content: center;
 
@@ -32,7 +51,7 @@
     padding: 1rem 2rem;
     border-radius: 5rem;
 
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 10px 25px rgba(34, 197, 94, .4);
@@ -43,25 +62,18 @@
     transform: scale(1.05);
 }
 .cta__phone{
-    margin-top: 1.2rem;
+    margin-top: 3rem;
     font-size: 1.5rem;
-    font-weight: 600;
-    
+    font-style: italic;
+    font-weight: 100;
 }
 .cta__image img{
-    width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
-    display: block;
+    border-radius: 2rem;
+    box-shadow: 0, 1px, 5px rgba(0,0,0, 0.09);
 }
-
-@media (min-width: 1024px){
-    .cta__container{
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-    .cta__content{
-        text-align: left;
+@media (min-width:768px){
+    .cta__phone{
+        font-size: 3rem;
     }
 }
 
@@ -71,6 +83,7 @@
     opacity: 0;
     transform: translateY(40px);
     transition: all .6s ease;
+
 }
 
 .cta.visible .cta__content,
