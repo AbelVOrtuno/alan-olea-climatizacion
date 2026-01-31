@@ -17,6 +17,8 @@
 }
 /* Diseño de las tarjetas */
 .testimonials__grid{
+    position: relative;
+    min-height: 320px;
     display: grid;
     gap: 2rem;
 }
@@ -26,12 +28,13 @@
     border-radius: 1.6rem;
     text-align: center;
     box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .08);
-    transition: transform .3s ease;
+    position: absolute;
+    
+    opacity: 0;
 }
 .testimonials__card:hover{
     transform: translateY(-6px);
 }
-
 /* Estilos para el contenido interno */
 .testimonials__card img{
     width: 100px;
@@ -60,16 +63,11 @@
     .testimonials__grid{
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        position: static;
+        min-height: auto;
     }
-}
-
-/* Animaciones extras */
-.testimonials__card{
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all .6s ease;
-}
-.testimonials__card.visible{
-    opacity: 1;
-    transform: translateY(0);
+    .testimonials__card{
+        position: relative;
+        opacity: 1;
+    }
 }

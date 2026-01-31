@@ -1,5 +1,3 @@
-
-
 const { src, dest, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 

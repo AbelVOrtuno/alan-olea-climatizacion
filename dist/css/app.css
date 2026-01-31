@@ -45,8 +45,8 @@ img {
   margin: 0 auto;
   padding: 0.8rem 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -88,6 +88,13 @@ img {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .hero {
   background: radial-gradient(circle at top right, #0a4da2, #00aaff);
   color: white;
@@ -124,7 +131,7 @@ img {
 }
 
 .hero__btn {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2rem;
   display: inline-block;
@@ -399,6 +406,8 @@ img {
 
 /* Diseño de las tarjetas */
 .testimonials__grid {
+  position: relative;
+  min-height: 320px;
   display: grid;
   gap: 2rem;
 }
@@ -409,7 +418,8 @@ img {
   border-radius: 1.6rem;
   text-align: center;
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  position: absolute;
+  opacity: 0;
 }
 
 .testimonials__card:hover {
@@ -447,20 +457,24 @@ img {
   .testimonials__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    position: static;
+    min-height: auto;
+  }
+  .testimonials__card {
+    position: relative;
+    opacity: 1;
   }
 }
 /* Animaciones extras */
-.testimonials__card {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
+/*.testimonials__card{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .6s ease;
 }
-
-.testimonials__card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+.testimonials__card.visible{
+    opacity: 1;
+    transform: translateY(0);
+} */
 * {
   margin: 0;
   padding: 0;
@@ -566,114 +580,6 @@ img {
   color: orange;
   background: radial-gradient(black, #333);
 }
-
-/*.footer{
-    background: linear-gradient(135deg, $primary-color, $secondary-color);
-    color: white;
-    padding: 3rem 1rem 1.5rem;
-}
-.footer__container{
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-}
-/* Logo de la empresa 
-.footer__brand img{
-    width: 100%;
-    margin-bottom: 2rem;
-    border-radius: 50%;
-}
-.footer__brand p{
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-}
-/* Servicios 
-.footer__services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-}
-.footer__services h3{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: orange;
-}
-.footer__services ul{
-    list-style: none;
-    padding: 0;
-}
-.footer__services li{
-    margin-bottom: .5rem;
-    font-size: 2rem;
-}
-/* Seccion Contacto + Whatsapp 
-.footer__contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-.footer__contact h3{
-    font-size: 3rem;
-    color: orange;
-    text-align: center;
-}
-.footer__contact p{
-    font-size: 2rem;
-    margin-bottom: .5rem;
-}
-.footer__whatsapp{
-    display: inline-block;
-    margin-top: 1rem;
-
-    background-color: $accent;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 30px;
-
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-/* Copyright 
-.footer__bottom{
-    max-width: 100%;
-    width: 100%;
-    background-image: radial-gradient(black, white);
-    text-align: center;
-
-    font-size: 2rem;
-    font-style: oblique;
-    font-weight: 100;
-    padding-bottom: 2rem;
-    color: white;
-    border-top: 1px solid rgba(255, 255, 255,.1);
-    padding-top: 1rem;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-@media (min-width:768px){
-    .footer__container{
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-    }
-} */
 /* Components */
 .btn {
   display: inline-block;

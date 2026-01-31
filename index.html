@@ -12,8 +12,36 @@
   <meta property="og:title" content="Alan Olea Climatización">
   <meta property="og:description" content="Servicio profesional de aire acondicionado residencial y automotriz.">
   <meta property="og:type" content="website">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Alan & Erick Climatización",
+  "image": "https://tusitio.com/assets/images/logo.webp",
+  "url": "https://tusitio.com",
+  "telephone": "+52-744-185-7641",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Acapulco Gro",
+    "addressCountry": "MX"
+  },
+  "areaServed": [
+    "Acapulco",
+    "Centro",
+    "Costera",
+    "Punta Diamante"
+  ],
+  "openingHours": "Mo-Sa 08:00-19:00",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://wa.me/527441857641"
+  ]
+}
+</script>
+  <!-- CSS Minificado-->
+  <link rel="preload" href="dist/css/app.min.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="dist/css/app.css">
 </head>
 
@@ -22,11 +50,13 @@
   <header class="header">
     <div class="header__container">
 
-      <img
-        src="dist/css/js/img/alan-marca.png"
-        alt="Alan Clima - Aire acondicionado"
-        class="header__logo"
-      >
+      <picture>
+        <source srcset="dist/css/js/img/alan&erick.avif" type="image/avif">
+        <source srcset="dist/css/js/img/alan&erick.webp" type="image/webp">
+        
+        <img src="dist/css/js/img/alan&erick.png"alt="Alan Clima - Aire acondicionado"class="header__logo" loading="eager">
+      </picture>
+      
 
       <nav class="header__nav">
         <a href="#inicio">Inicio</a>
@@ -36,14 +66,14 @@
       </nav>
 
       <a
-        href="https://wa.me/5210000000000"
+        href="https://wa.me/527441857641"
         class="header__cta"
         aria-label="Contactar por WhatsApp"
       >
-        (123) 456-7890
+        (52) 744-185-7641
       </a>
     </div>
-</header>
+  </header>
 
   <!-- Hero -->
   <section class="hero" id="inicio">
@@ -57,16 +87,21 @@
 
         <p>Servicio rápido, confiable y <span id="naranja">garantizado</span> </p>
 
-        <a href="https://wa.me/5210000000000" class="hero__btn">
+        <a href="https://wa.me/527441857641" class="hero__btn">
         Contáctanos por WhatsApp
         </a>
       </div>
 
       <div class="hero__image">
-        <img
-        src="dist/css/js/img/alan-logo.png"
-        alt="Servicio de aire acondicionado residencial y automotriz"
-        >
+        <picture>
+          <source srcset="dist/css/js/img/alan&erick.avif" type="image/avif">
+          <source srcset="dist/css/js/img/alan&erick.webp" type="image/webp">
+
+          <img
+          src="dist/css/js/img/alan&erick.png"
+          alt="Servicio de aire acondicionado residencial y automotriz" loading="lazy"
+          >
+        </picture>
       </div>
     </div>
   </section>
@@ -79,25 +114,43 @@
     <div class="services__grid">
 
       <article class="services__card">
-        <img src="dist/css/js/img/reparacion.jpg" alt="Reparacion de aires resideciales" class="service-card__icon">
+        <picture>
+          <img src="dist/css/js/img/reparacion.jpg" alt="Reparacion de aires resideciales" class="service-card__icon" loading="lazy">
+        </picture>
+        
         <h3>Reparacion de aires acondicionados residenciales</h3>
         <p>Diagnostico y reparacion profesional para equipos residenciales y de ultima generacion</p>
       </article>
 
       <article class="services__card">
-        <img src="dist/css/js/img/instalacion.jpg" alt="Instalacion segura de aires y ventiladores" class="service-card__icon">
+        <picture>
+          <source srcset="dist/css/js/img/instalacion.avif" type="image/avif">
+          <source srcset="dist/css/js/img/instalacion.webp" type="image/webp">
+          <img src="dist/css/js/img/instalacion.jpg" alt="Instalacion segura de aires y ventiladores" class="service-card__icon" loading="lazy">
+        </picture>
+        
         <h3>Instalacion de Aire Acondicionado</h3>
         <P>Instalaciones seguras, eficientes y con garantia.¿Necesitas un aire en tu hogar y no sabes como o donde instalarlo? ¡Ven con nosotros y te lo instalamos rapidisimo!</P>
       </article>
 
       <article class="services__card">
-        <img src="dist/css/js/img/manttoPrevent.jpg" alt="Limpieza de aires acondicionados" class="service-card__icon">
+        <picture>
+          <source srcset="dist/css/js/img/manttoPrevent.avif" type="image/avif">
+          <source srcset="dist/css/js/img/manttoPrevent.webp" type="image/webp">
+          <img src="dist/css/js/img/manttoPrevent.jpg" alt="Limpieza de aires acondicionados" class="service-card__icon" loading="lazy">
+        </picture>
+        
         <h3>Mantenimiento Preventivo</h3>
         <p>Evita fallas y alarga la vida util de tu equipo.Le damos una segunda vida a tu aire viejo.</p>
       </article>
 
       <article class="services__card">
-        <img src="dist/css/js/img/aireAutomotriz.png" alt="Aires de autos,camionetas,camiones y mas" class="service-card__icon">
+        <picture>
+          <source srcset="dist/css/js/img/aireAutomotriz.avif" type="image/avif">
+          <source srcset="dist/css/js/img/aireAutomotriz.webp" type="image/webp">
+          <img src="dist/css/js/img/aireAutomotriz.png" alt="Aires de autos,camionetas,camiones y mas" class="service-card__icon" loading="lazy">
+        </picture>
+        
         <h3>Aire Acondicionado Automotriz</h3>
         <p>Revision y reparacion del sistema de climatizacion vehicular.</p>
       </article>
@@ -122,7 +175,11 @@
       </div>
 
       <div class="why-us__image">
-        <img src="dist/css/js/img/tecnico.jpg" alt="Tecnico reparando aire acondicionado" loading="lazy">
+        <picture>
+          <source srcset="dist/css/js/img/tecnico.avif" type="image.avif">
+          <source srcset="dist/css/js/img/tecnico.webp" type="image.webp">
+          <img src="dist/css/js/img/tecnico.jpg" alt="Tecnico reparando aire acondicionado" loading="lazy">
+        </picture>
       </div>
 
       <div class="why-us__maps">
@@ -137,11 +194,11 @@
         </ul>
 
         <a
-        href="https://wa.me/5210000000000"
+        href="https://wa.me/527441857641"
         class="header__cta2"
         aria-label="Contactar por WhatsApp"
         >
-        (123) 456-7890
+        (52) 744-185-7641
         </a>
 
       </div>
@@ -155,31 +212,43 @@
     <div class="testimonials__container">
       <h2 class="testimonials__title">Lo que opinan nuestros clientes</h2>
 
-      <div class="testimonials__grid">
-
-        <article class="testimonials__card">
-          <img src="dist/css/js/img/JuanPerez.jpg" alt="Cliente Satisfecho" loading="lazy">
+      <div class="testimonials__grid ">
+        <article class="testimonials__card ">
+          <picture>
+            <source srcset="dist/css/js/img/JuanPerez.avif" type="image/avif">
+            <source srcset="dist/css/js/img/JuanPerez.webp" type="image/webp">
+            <img src="dist/css/js/img/JuanPerez.jpg" alt="Cliente Satisfecho" loading="lazy">
+          </picture>
+          
           <p>"Excelente servicio, llegaron muy rapido y dejaron mi aire funcionando como nuevo.La verdad los recomiendo muchisimo."</p>
           <strong>Juan Pérez</strong>
           <div class="testimonials-stars">★★★★★</div>
         </article>
 
         <article class="testimonials__card">
-          <img src="dist/css/js/img/MariaLP.jpg" alt="Cliente Satisfecho" loading="lazy">
+          <picture>
+            <source srcset="dist/css/js/img/MariaLP.avif" type="image/avif">
+            <source srcset="dist/css/js/img/MariaLP.webp" type="image/webp">
+            <img src="dist/css/js/img/MariaLP.jpg" alt="Cliente Satisfecho" loading="lazy">
+          </picture>
+         
           <p>"Mi aire quedó como nuevo.Atencion profesional y precios justos.Sin duda volveria a llamarlos."</p>
           <strong>María López</strong>
           <div class="testimonials-stars">★★★★★</div>
         </article>
 
-        <article class="testimonials__card">
-          <img src="dist/css/js/img/Carlos.jpg" alt="Cliente Satisfecho" loading="lazy">
+        <article class="testimonials__card ">
+          <picture>
+            <source srcset="dist/css/js/img/Carlos.avif" type="image/avif">
+            <source srcset="dist/css/js/img/Carlos.webp" type="image/webp">
+            <img src="dist/css/js/img/Carlos.jpg" alt="Cliente Satisfecho" loading="lazy">
+          </picture>
+          
           <p>"Tecnicos muy amables y trabajo garantizado.Quede muy satisfecho con el trabajo."</p>
           <strong>Carlos Ramirez</strong>
           <div class="testimonials-stars">★★★★★</div>
         </article>
-      </div>
-      
-   
+          
     </div>
 </section>
 
@@ -192,15 +261,20 @@
 
         <a href="https://wa.me/527441857641" class="btn-whatsapp" target="_blank" rel="noopener"><span>Contactanos por WhatsApp</span></a>
 
-        <div class="cta__phone">(+52) 744 185 7641</div>
+        <div class="cta__phone"><a href="tel:+527441857641">Telefono (+52) 744 185 7641</a></div>
       </div>
 
-      <div class="cta__image">
-        <img src="dist/css/js/img/tecnicoFeliz.png" alt="Tecnico en aire Acondicionado" loading="lazy">
-      </div>
+      
+        <picture>
+          <div class="cta__image">
+            <source srcset="dist/css/js/img/tecnicoFeliz.avif" type="image/avif">
+            <source srcset="dist/css/js/img/tecnicoFeliz.webp" type="image/webp">
+            <img src="dist/css/js/img/tecnicoFeliz.png" alt="Tecnico en aire Acondicionado" loading="lazy">
+          </div>
+        </picture>
 
+      </div>
     </div>
-
   </section>
 
   <!-- Footer -->
@@ -208,7 +282,12 @@
     <div class="footer__container">
       <!--Brand-->
       <div class="footer__brand">
-        <img src="dist/css/js/img/alan-logo.png" alt="Alan Olea Climatización" class="footer__logo">
+        <picture>
+          <source srcset="dist/css/js/img/alan&erick.avif" type="image/avif">
+          <source srcset="dist/css/js/img/alan&erick.webp" type="image/webp">
+          <img src="dist/css/js/img/alan&erick.png" alt="Alan Olea Climatización" class="footer__logo" loading="lazy">
+        </picture>
+
         <p class="footer__description">
           Somos especialistas en reparacion,mantenimiento e instalacion de aires acondicionados residenciales y automotrices.
         </p>
@@ -230,7 +309,7 @@
       <div class="footer__contact">
         <h3 class="footer__title">Contacto</h3>
         <p>Acapulco Gro</p>
-        <p>Telefono (+52) 744 185 7641</p>
+        <a href="tel:+527441857641">Telefono (+52) 744 185 7641</a>
         <a href="mailto:contacto@alanclima.com" class="footer__link">contacto@alanclima.com</a>
 
         <a href="https://wa.me/527441857641" class="footer__whatsapp" target="_blank" rel="noopener">WhatsApp directo</a>
@@ -243,6 +322,9 @@
     </div>
   </footer>
   <!-- JS -->
-  <script src="dist/css/js/img/app.js"></script>
+  <script src="dist/css/js/img/app.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="./src/sass/js/app.js" defer></script>
 </body>
 </html>
