@@ -94,5 +94,5 @@ function animarHeaderScroll() {
       scrub: true
     }
   });
-}
+} 
 animarHeaderScroll();
